@@ -1,0 +1,145 @@
+/**general**/
+body {
+  color: #36454f;
+  font-family: 'Montserrat', sans-serif;
+  margin: auto 5%;
+}
+header {
+  border-bottom: #ff8c00 solid 1px;
+  margin-bottom: 10px;
+  padding: 20px 0;
+  width:100%;
+  display: flex;
+}
+h1 {
+  font-weight: lighter;
+  font-size: 45px;
+  text-transform: uppercase;
+}
+h3 {
+  font-weight: lighter;
+  color:#36454f;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+span {
+  display: block;
+}
+/**header section**/
+.top-container {
+  padding:30px;
+}
+.top-logo {
+  width: 100% !important;
+  display: block;
+}
+.top-info {
+  text-align: right;
+  width: 80%;
+  text-transform: uppdercase;
+}
+
+/**hero section**/
+.hero-section {
+  text-align: right;
+  padding: 10px; 30px;
+  overflow: auto;
+}
+.hero-image {
+  width:100%;
+  margin-bottom: 20px;
+}
+/**featured work section**/
+.main-container {
+  width:100%;
+}
+
+.featured {
+  text-align: center;
+  display: block;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.featured-text {
+  font-size:18px;
+  font-weight: bold;
+}
+.featured-url {
+  font-size:12px;
+  text-decoration: underline;
+}
+.featured a {
+  color:#2d3c49;
+  text-decoration: none;
+}
+
+.featured img {
+  border:1px #000000 solid;
+  width:25%;
+  margin-right: 2px;
+}
+
+/**responsive; media queries**/
+/* for smartphones such as Google Nexus 5*/
+@media screen and (max-width:550px) {
+  h1 {
+    font-size: 2em;
+    text-align: right;
+  }
+  header {
+    flex-wrap: wrap;
+  }
+  span {
+    display: inline-block;
+  }
+  .top-container {
+    margin-bottom: 10px;
+    width: 100% !important;
+  }
+  .top-logo {
+    margin: auto 5%;
+  }
+  .top-info {
+    text-align: right;
+  }
+
+  .featured-work {
+    width:100%;
+  }
+  .featured-text {
+    font-size:1.5em;
+    margin: 5px 0 30px 0;
+  }
+  .featured-url {
+    font-size:1em;
+  }
+}
+/* for tablets such as iPads*/
+@media screen and (max-width:768px) {
+.featured-work {
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+.featured {
+    width:31%;
+  }
+.featured-text {
+    font-size:1.2em;
+  }
+}
+/* for desktops*/
+@media screen and (min-width:992px) {
+.featured-work{
+  display: flex;
+  width:100%
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+   header, main {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+  }
